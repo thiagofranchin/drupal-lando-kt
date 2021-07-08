@@ -1,0 +1,43 @@
+name: lando-kt
+recipe: drupal8
+config:
+  php: '7.4'
+  via: nginx:1.18
+  webroot: web
+  database: mariadb
+services:
+  appserver:
+    build_as_root:
+      - "cd $LANDO_MOUNT && cp dev/settings.local.php web/sites/default"
+      - "cd $LANDO_MOUNT && cp dev/development.services.yml web/sites"
+  node:
+    type: node
+    globals:
+      node-sass: "latest"
+    # overrides:
+    #   environment:
+    #     HELIX_PATH: /app/web/profiles/contrib/helix
+    # build:
+    #   - cd $HELIX_PATH && npm install
+events:
+  pre-start:
+    - echo 'Funfando'
+  post-start:
+    - echo 'Finished'
+tooling:
+  cc:
+    service: appserver
+    description: clear cache
+    cmd: drush cr
+  phpcs:
+    service: appserver
+    description: PHP CS
+    cmd: /app/vendor/squizlabs/php_codesniffer/bin/phpcs --standard=Drupal,DrupalPratice --extensions=php,module,install,test,profile,theme,info
+  helloWorld:
+    service: appserver
+    description: Hello World
+    cmd:
+      - echo 'Hello'
+      - echo 'World'
+
+
