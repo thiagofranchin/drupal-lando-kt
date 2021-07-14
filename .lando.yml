@@ -3,6 +3,7 @@ recipe: drupal8
 config:
   php: '7.4'
   via: nginx:1.18
+  composer_version: "1.10.22"
   webroot: web
   database: mariadb
 services:
