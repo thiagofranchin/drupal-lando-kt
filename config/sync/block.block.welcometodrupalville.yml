@@ -6,20 +6,25 @@ dependencies:
     - 'block_content:basic:825dbbeb-0f23-4c4c-97da-1b48f8155904'
   module:
     - block_content
+    - system
   theme:
     - bartik
 id: welcometodrupalville
 theme: bartik
 region: sidebar_first
-weight: 0
+weight: 1
 provider: null
 plugin: 'block_content:825dbbeb-0f23-4c4c-97da-1b48f8155904'
 settings:
   id: 'block_content:825dbbeb-0f23-4c4c-97da-1b48f8155904'
   label: 'Welcome to Drupalville'
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
