@@ -9,7 +9,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://drupal-logo.png'
+  path: 'public://meme_jira.jpg'
   url: ''
   use_default: false
 _core:
