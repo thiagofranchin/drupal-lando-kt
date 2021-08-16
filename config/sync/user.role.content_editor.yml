@@ -1,0 +1,11 @@
+uuid: 348c590d-2e0b-45dc-96b1-bac030f8f1c0
+langcode: en
+status: true
+dependencies: {  }
+id: content_editor
+label: 'Content Editor'
+weight: 3
+is_admin: null
+permissions:
+  - 'access user contact forms'
+  - 'edit own comments'
