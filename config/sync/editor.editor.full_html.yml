@@ -24,6 +24,7 @@ settings:
             - Subscript
             - '-'
             - RemoveFormat
+            - Styles
         -
           name: Linking
           items:
@@ -51,13 +52,15 @@ settings:
             - ShowBlocks
             - Source
   plugins:
+    language:
+      language_list: un
     stylescombo:
-      styles: ''
+      styles: 'h1.title|H1 Title'
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null
