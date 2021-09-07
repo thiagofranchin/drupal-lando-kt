@@ -1,0 +1,17 @@
+uuid: 51ba3315-665d-4194-a806-e9cd5dbc0508
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'User groups'
+type: user_groups
+description: 'This is were we track the Drupal groups'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

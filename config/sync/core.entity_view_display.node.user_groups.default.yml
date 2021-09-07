@@ -1,0 +1,28 @@
+uuid: 3d6870e5-97fd-4666-90c4-26adb691efff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.user_groups.body
+    - node.type.user_groups
+  module:
+    - text
+    - user
+id: node.user_groups.default
+targetEntityType: node
+bundle: user_groups
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

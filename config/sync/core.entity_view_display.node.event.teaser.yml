@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.event.field_event_website
     - node.type.event
   module:
+    - image
     - text
     - user
 id: node.event.teaser
@@ -25,12 +26,20 @@ content:
       trim_length: 600
     third_party_settings: {  }
     region: content
+  field_event_logo:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
   field_event_date: true
-  field_event_logo: true
   field_event_website: true
