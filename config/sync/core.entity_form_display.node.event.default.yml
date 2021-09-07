@@ -4,8 +4,15 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_event_logo
+    - field.field.node.event.field_event_website
+    - image.style.thumbnail
     - node.type.event
   module:
+    - datetime
+    - image
+    - link
     - path
     - text
 id: node.event.default
@@ -29,6 +36,28 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_event_date:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_event_logo:
+    weight: 122
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_event_website:
+    weight: 123
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   path:
     type: path
     weight: 30
