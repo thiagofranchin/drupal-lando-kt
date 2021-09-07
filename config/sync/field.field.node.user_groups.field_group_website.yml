@@ -1,0 +1,23 @@
+uuid: 6b4c06a2-2697-40ae-b613-6152a5306bbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group_website
+    - node.type.user_groups
+  module:
+    - link
+id: node.user_groups.field_group_website
+field_name: field_group_website
+entity_type: node
+bundle: user_groups
+label: 'Group Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

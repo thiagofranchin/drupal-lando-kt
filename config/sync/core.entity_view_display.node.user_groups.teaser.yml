@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.user_groups.body
+    - field.field.node.user_groups.field_contact_email
+    - field.field.node.user_groups.field_group_contact
+    - field.field.node.user_groups.field_group_experience
+    - field.field.node.user_groups.field_group_website
     - node.type.user_groups
   module:
     - text
@@ -27,4 +31,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_contact_email: true
+  field_group_contact: true
+  field_group_experience: true
+  field_group_website: true

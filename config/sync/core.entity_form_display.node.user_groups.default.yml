@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.user_groups.body
+    - field.field.node.user_groups.field_contact_email
+    - field.field.node.user_groups.field_group_contact
+    - field.field.node.user_groups.field_group_experience
+    - field.field.node.user_groups.field_group_website
     - node.type.user_groups
   module:
+    - link
     - path
     - text
 id: node.user_groups.default
@@ -29,6 +34,36 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_contact_email:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_group_contact:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_group_experience:
+    weight: 125
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_group_website:
+    weight: 122
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   path:
     type: path
     weight: 30
