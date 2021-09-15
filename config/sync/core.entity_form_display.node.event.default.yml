@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_logo
     - field.field.node.event.field_event_sponsors
+    - field.field.node.event.field_event_topics
     - field.field.node.event.field_event_website
     - image.style.thumbnail
     - node.type.event
@@ -53,6 +54,16 @@ content:
     region: content
   field_event_sponsors:
     weight: 125
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_event_topics:
+    weight: 126
     settings:
       match_operator: CONTAINS
       match_limit: 10

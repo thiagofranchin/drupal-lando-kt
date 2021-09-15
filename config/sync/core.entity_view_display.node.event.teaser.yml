@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_logo
     - field.field.node.event.field_event_sponsors
+    - field.field.node.event.field_event_topics
     - field.field.node.event.field_event_website
     - node.type.event
   module:
@@ -44,4 +45,5 @@ content:
 hidden:
   field_event_date: true
   field_event_sponsors: true
+  field_event_topics: true
   field_event_website: true
