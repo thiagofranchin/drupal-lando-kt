@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.user_groups.body
     - field.field.node.user_groups.field_contact_email
+    - field.field.node.user_groups.field_events_sponsered
     - field.field.node.user_groups.field_group_contact
     - field.field.node.user_groups.field_group_experience
     - field.field.node.user_groups.field_group_website
@@ -33,6 +34,7 @@ content:
     region: content
 hidden:
   field_contact_email: true
+  field_events_sponsered: true
   field_group_contact: true
   field_group_experience: true
   field_group_website: true
