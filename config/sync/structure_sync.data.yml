@@ -50,7 +50,6 @@ taxonomies:
       weight: '4'
       parent: '0'
       uuid: 43984f37-9f30-4f4c-9d94-78f4e5616f75
-  tags: {  }
 blocks:
   -
     info: 'Welcome to Drupalville'
