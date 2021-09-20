@@ -2,7 +2,7 @@ taxonomies:
   evet_topics:
     -
       vid: evet_topics
-      tid: '3'
+      tid: '8'
       langcode: en
       name: 'Introduction do Drupal'
       description__value: null
@@ -12,27 +12,7 @@ taxonomies:
       uuid: b14f34b3-b5af-412f-9462-78766394279d
     -
       vid: evet_topics
-      tid: '5'
-      langcode: en
-      name: 'Module Development'
-      description__value: null
-      description__format: null
-      weight: '3'
-      parent: '0'
-      uuid: ce2343a7-85b8-4b16-b672-eb1bd490e0d8
-    -
-      vid: evet_topics
-      tid: '7'
-      langcode: en
-      name: Performance
-      description__value: null
-      description__format: null
-      weight: '4'
-      parent: '0'
-      uuid: 43984f37-9f30-4f4c-9d94-78f4e5616f75
-    -
-      vid: evet_topics
-      tid: '4'
+      tid: '9'
       langcode: en
       name: 'Site Building'
       description__value: null
@@ -42,7 +22,17 @@ taxonomies:
       uuid: e9e21a83-0b26-40db-bf89-e54fdf82da10
     -
       vid: evet_topics
-      tid: '6'
+      tid: '10'
+      langcode: en
+      name: 'Module Development'
+      description__value: null
+      description__format: null
+      weight: '3'
+      parent: '0'
+      uuid: ce2343a7-85b8-4b16-b672-eb1bd490e0d8
+    -
+      vid: evet_topics
+      tid: '11'
       langcode: en
       name: Theming
       description__value: null
@@ -50,3 +40,41 @@ taxonomies:
       weight: '2'
       parent: '0'
       uuid: 95ad791b-e507-4a0c-8199-45404fc68001
+    -
+      vid: evet_topics
+      tid: '12'
+      langcode: en
+      name: Performance
+      description__value: null
+      description__format: null
+      weight: '4'
+      parent: '0'
+      uuid: 43984f37-9f30-4f4c-9d94-78f4e5616f75
+  tags: {  }
+blocks:
+  -
+    info: 'Welcome to Drupalville'
+    langcode: en
+    uuid: 825dbbeb-0f23-4c4c-97da-1b48f8155904
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>Welcome, this is where you learn all about Drupal.</p>\r\n"
+          summary: ''
+          format: basic_html
+menus:
+  -
+    menu_name: main
+    title: 'About us'
+    parent: null
+    uri: 'internal:/about-us'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '1'
+    langcode: en
+    uuid: 338a8fca-fc68-42b0-9483-7428437cffac
