@@ -1,0 +1,24 @@
+uuid: f6e13aa1-f640-4cf2-a18e-6b942c8158df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content_label
+label: 'Content Label'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  5da148da-8a87-4810-9a18-4831e5497df7:
+    id: node_type
+    bundles:
+      article: article
+      event: event
+      user_groups: user_groups
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5da148da-8a87-4810-9a18-4831e5497df7
+selection_logic: and
+weight: -5
+relationships: {  }
