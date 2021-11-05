@@ -12,16 +12,6 @@ taxonomies:
       uuid: b14f34b3-b5af-412f-9462-78766394279d
     -
       vid: evet_topics
-      tid: '9'
-      langcode: en
-      name: 'Site Building'
-      description__value: null
-      description__format: null
-      weight: '1'
-      parent: '0'
-      uuid: e9e21a83-0b26-40db-bf89-e54fdf82da10
-    -
-      vid: evet_topics
       tid: '10'
       langcode: en
       name: 'Module Development'
@@ -32,16 +22,6 @@ taxonomies:
       uuid: ce2343a7-85b8-4b16-b672-eb1bd490e0d8
     -
       vid: evet_topics
-      tid: '11'
-      langcode: en
-      name: Theming
-      description__value: null
-      description__format: null
-      weight: '2'
-      parent: '0'
-      uuid: 95ad791b-e507-4a0c-8199-45404fc68001
-    -
-      vid: evet_topics
       tid: '12'
       langcode: en
       name: Performance
@@ -50,6 +30,26 @@ taxonomies:
       weight: '4'
       parent: '0'
       uuid: 43984f37-9f30-4f4c-9d94-78f4e5616f75
+    -
+      vid: evet_topics
+      tid: '9'
+      langcode: en
+      name: 'Site Building'
+      description__value: null
+      description__format: null
+      weight: '1'
+      parent: '0'
+      uuid: e9e21a83-0b26-40db-bf89-e54fdf82da10
+    -
+      vid: evet_topics
+      tid: '11'
+      langcode: en
+      name: Theming
+      description__value: null
+      description__format: null
+      weight: '2'
+      parent: '0'
+      uuid: 95ad791b-e507-4a0c-8199-45404fc68001
 blocks:
   -
     info: 'Welcome to Drupalville'
@@ -77,3 +77,15 @@ menus:
     weight: '1'
     langcode: en
     uuid: 338a8fca-fc68-42b0-9483-7428437cffac
+  -
+    menu_name: main
+    title: 'Home Patient'
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: Facebook
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: c2e52369-db01-416c-afaa-7587082b9ba4
