@@ -19,6 +19,7 @@
         "drupal/core": "9.1.10",
         "drupal/core-composer-scaffold": "^9.1",
         "drupal/core-recommended": "^9.1",
+        "drupal/devel": "^4.1",
         "drupal/file_entity": "^2.0@beta",
         "drupal/pathauto": "^1.8",
         "drupal/structure_sync": "^2.0",
