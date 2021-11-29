@@ -7,7 +7,7 @@ dependencies:
     - field.storage.node.field_event_logo
     - field.storage.node.field_event_topics
     - field.storage.node.field_event_website
-    - image.style.thumbnail
+    - image.style.upcoming_events_150x150
     - node.type.event
     - system.menu.main
   module:
@@ -307,8 +307,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
-            image_link: ''
+            image_style: upcoming_events_150x150
+            image_link: content
           group_column: ''
           group_columns: {  }
           group_rows: true
