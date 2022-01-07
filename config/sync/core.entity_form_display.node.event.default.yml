@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_logo
+    - field.field.node.event.field_event_number
     - field.field.node.event.field_event_sponsors
     - field.field.node.event.field_event_topics
     - field.field.node.event.field_event_website
@@ -16,6 +17,7 @@ dependencies:
     - image
     - link
     - path
+    - telephone
     - text
 id: node.event.default
 targetEntityType: node
@@ -51,6 +53,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_event_number:
+    weight: 127
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
     region: content
   field_event_sponsors:
     weight: 125

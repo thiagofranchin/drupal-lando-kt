@@ -7,12 +7,14 @@ dependencies:
     - field.field.node.event.body
     - field.field.node.event.field_event_date
     - field.field.node.event.field_event_logo
+    - field.field.node.event.field_event_number
     - field.field.node.event.field_event_sponsors
     - field.field.node.event.field_event_topics
     - field.field.node.event.field_event_website
     - node.type.event
   module:
     - image
+    - telephone
     - text
     - user
 id: node.event.teaser
@@ -23,7 +25,7 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }
@@ -37,8 +39,16 @@ content:
       image_style: ''
       image_link: ''
     third_party_settings: {  }
+  field_event_number:
+    type: telephone_link
+    weight: 3
+    region: content
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
