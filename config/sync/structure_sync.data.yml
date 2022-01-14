@@ -74,7 +74,7 @@ menus:
     description: null
     enabled: '1'
     expanded: '0'
-    weight: '1'
+    weight: '-44'
     langcode: en
     uuid: 338a8fca-fc68-42b0-9483-7428437cffac
   -
@@ -86,6 +86,18 @@ menus:
     description: Facebook
     enabled: '1'
     expanded: '0'
-    weight: '0'
+    weight: '-46'
     langcode: en
     uuid: c2e52369-db01-416c-afaa-7587082b9ba4
+  -
+    menu_name: main
+    title: Welcome
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: en
+    uuid: 3bfea1cd-4f16-4354-aa48-62eb6e2dfd8a

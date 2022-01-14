@@ -581,6 +581,7 @@ display:
         type: normal
         title: 'Events Incomming'
         menu_name: main
+        weight: -47
     cache_metadata:
       max-age: -1
       contexts:
