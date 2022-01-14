@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.recent_events_added
   module:
+    - ctools
     - views
   theme:
     - bartik
@@ -21,4 +22,11 @@ settings:
   label_display: visible
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
