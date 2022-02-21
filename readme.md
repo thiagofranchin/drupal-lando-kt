@@ -1,6 +1,6 @@
 # KT Drupal + Lando
 
-### Commands
+### Commands.
 
 ```
 lando start
